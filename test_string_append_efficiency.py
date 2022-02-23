@@ -2,19 +2,22 @@ import time
 
 
 
-
+# O(n^2) growth - quadratic growth
 def python_append_string(size):
     x = ''
     for _ in range(size):
         x += 'Hello'
     return x
 
+# O(n) growth - linear growth
 def python_append_list(size):
     x = []
     for _ in range(size):
         x.append('Hello')
     return ''.join(x)
 
+# O(n) < O(n^2)
+# Smaller is better for runtime!
 
 
 if __name__ == '__main__':
